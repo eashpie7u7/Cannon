@@ -72,9 +72,9 @@ def move():
 
     draw()
 
-    for target in targets:
+  """  for target in targets:
         if not inside(target):
-            return
+            return"""
 
     ontimer(move, 50)
 
