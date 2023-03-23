@@ -6,6 +6,8 @@ Exercises
 2. Vary the effect of gravity.
 3. Apply gravity to the targets.
 4. Change the speed of the ball.
+
+Editado por A01663894@tec.mx Eashley Martinez 
 """
 
 from random import randrange
