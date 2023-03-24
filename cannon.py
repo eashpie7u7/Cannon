@@ -57,10 +57,10 @@ def move():
         targets.append(target)
 
     for target in targets:
-        target.x -= 5
+        target.x -= 5 #Se modifico la velocidad de los objetivos, paso de 0.5 a 5
 
     if inside(ball):
-        speed.y -=0.05
+        speed.y -=0.05 #Se modifico la velocidad de los proyectiles, paso de 0.35 a 0.05 
         ball.move(speed)
 
     dupe = targets.copy()
@@ -72,9 +72,9 @@ def move():
 
     draw()
     ontimer(move, 50)
-    for target in targets:
-        if not inside(target):
-            target.x=randrange(195,200)
+    for target in targets: 
+        if not inside(target): #Se añade una funcion la cual nos ayudara a que el juego sea infinito
+            target.x=randrange(195,200) #Cambiamos el rango tanto para las x como para las y
             target.y=randrange(-150,150)
 
 
