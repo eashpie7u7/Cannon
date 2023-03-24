@@ -71,7 +71,7 @@ def move():
             targets.append(target)
 
     draw()
-
+    ontimer(move, 50)
     for target in targets:
         if not inside(target):
             target.x=randrange(195,200)
