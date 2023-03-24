@@ -77,7 +77,6 @@ def move():
             target.x=randrange(195,200)
             target.y=randrange(-150,150)
 
-    ontimer(move, 50)
 
 
 setup(420, 420, 370, 0)
