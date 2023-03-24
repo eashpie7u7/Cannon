@@ -60,7 +60,7 @@ def move():
         target.x -= 0.9
 
     if inside(ball):
-        speed.y -=0.6
+        speed.y -=0.35
         ball.move(speed)
 
     dupe = targets.copy()
@@ -71,10 +71,11 @@ def move():
             targets.append(target)
 
     draw()
-
-
     ontimer(move, 50)
-
+    for target in targets:
+        if not inside(target):
+            target.x=randrange(-200, 200)
+            target.y=randrange(-150, 150)
 
 setup(420, 420, 370, 0)
 hideturtle()
